@@ -1,0 +1,14 @@
+{ "products": [{
+  "name": "Modern Designer's Choice",
+  "price": "70",
+  "img": "http://ep.yimg.com/ay/yhst-12153424001014/low-modern2-3.jpg"
+  },{
+  "name": "Summer Jam Jar",
+  "price": "35",
+  "img":"http://ep.yimg.com/ca/I/yhst-12153424001014_2268_602947"
+  },{
+  "name": "Garden Roses",
+  "price": "175",
+  "img": "http://ep.yimg.com/ca/I/yhst-12153424001014_2268_9157782"
+  }]
+}
