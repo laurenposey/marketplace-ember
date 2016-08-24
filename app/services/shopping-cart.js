@@ -6,8 +6,7 @@ export default Ember.Service.extend({
 
   add(item) {
     this.get('items').pushObject(item);
-    this.get('updateTotal')(this);
   },
 
-  
+
 });
