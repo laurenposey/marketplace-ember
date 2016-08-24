@@ -1,2 +1,6 @@
 <h1>Admin Page</h1>
 {{new-product saveProduct="saveProduct"}}
+<br>
+{{#each model as |product|}}
+  {{admin-product-tile product=product updateProduct="updateProduct"}}
+{{/each}}

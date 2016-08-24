@@ -1,5 +1,5 @@
-{{#if addNewProduct}}
-<h1>Add a new product</h1>
+{{#if showProductUpdateForm}}
+<h1>Update this product</h1>
 <div>
   <form>
     <div class="form-group">
@@ -22,9 +22,9 @@
       {{input value=img id="img"}}
     </div>
 
-    <button {{action 'saveProduct'}}>Save</button>
+    <button {{action 'updateProduct' product}}>Update</button>
   </form>
 </div>
 {{else}}
-  <button {{action 'productFormShow'}}>New Product</button>
+  <button {{action 'updateFormShow'}}>Update</button>
 {{/if}}

@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="col-sm-6 col-md-6">
+    <div class="thumbnail">
+      {{#link-to 'product' product.id}}
+      <img src={{product.img}} alt={{product.name}}>
+      {{/link-to}}
+      <div class="caption">
+        <p>{{product.name}}</p>
+        <p>Price: ${{product.price}}</p>
+        {{update-product product=product updateProduct="updateProduct"}}
+        <!-- <button class="btn btn-default" {{action 'delete' product}}>Delete</button> -->
+      </div>
+    </div>
+  </div>
+</div>
