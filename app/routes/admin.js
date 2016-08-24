@@ -19,12 +19,10 @@ export default Ember.Route.extend({
       });
       product.save();
       this.transitionTo('admin');
-    }
-    //  ,
-     //
-    //  destroyProduct(product) {
-    //    product.destroyRecord();
-    //    this.transitionTo('admin');
-    //  }
+    },
+     delete(product) {
+       product.destroyRecord();
+       this.transitionTo('admin');
+     }
    }
  });

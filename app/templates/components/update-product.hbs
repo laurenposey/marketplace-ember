@@ -22,9 +22,9 @@
       {{input value=img id="img"}}
     </div>
 
-    <button {{action 'updateProduct' product}}>Update</button>
+    <button class="btn btn-default" {{action 'updateProduct' product}}>Update</button>
   </form>
 </div>
 {{else}}
-  <button {{action 'updateFormShow'}}>Update</button>
+  <button class="btn btn-default" {{action 'updateFormShow'}}>Update</button>
 {{/if}}

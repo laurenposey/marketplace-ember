@@ -2,5 +2,5 @@
 {{new-product saveProduct="saveProduct"}}
 <br>
 {{#each model as |product|}}
-  {{admin-product-tile product=product updateProduct="updateProduct"}}
+  {{admin-product-tile product=product updateProduct="updateProduct" delete="delete"}}
 {{/each}}
