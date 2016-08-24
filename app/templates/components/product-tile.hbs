@@ -1,9 +1,12 @@
 <div class="row">
-  <div class=".col-xs-4">
-    <img src={{product.img}} alt={{product.name}}>
-    <br>
-    {{product.name}}
-    Price: ${{product.price}}
-    <button class="btn btn-default"{{action 'addToCart' product}}>Add to Cart</button>
+  <div class="col-sm-6 col-md-6">
+    <div class="thumbnail">
+      <img src={{product.img}} alt={{product.name}}>
+      <div class="caption">
+        <p>{{product.name}}</p>
+        <p>Price: ${{product.price}}</p>
+        <button class="btn btn-default" {{action 'addToCart' product}}>Add to Cart</button>
+      </div>
+    </div>
   </div>
 </div>

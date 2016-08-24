@@ -1,8 +1,9 @@
 <h1>Here are all our products:</h1>
+  
 
-{{#each model as |product|}}
-  {{product-tile product=product}}
-{{/each}}
+      {{#each model as |product|}}
+        {{product-tile product=product}}
+      {{/each}}
 
 <h3>Your Shopping cart</h3>
 {{display-cart item=product}}
