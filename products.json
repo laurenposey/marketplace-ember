@@ -1,14 +1,17 @@
 { "products": [{
   "name": "Modern Designer's Choice",
   "price": "70",
-  "img": "http://ep.yimg.com/ay/yhst-12153424001014/low-modern2-3.jpg"
+  "img": "http://ep.yimg.com/ay/yhst-12153424001014/low-modern2-3.jpg",
+  "description": "Pave of color-blocked blooms."
   },{
   "name": "Summer Jam Jar",
   "price": "35",
-  "img":"http://ep.yimg.com/ca/I/yhst-12153424001014_2268_602947"
+  "img":"http://ep.yimg.com/ca/I/yhst-12153424001014_2268_602947",
+  "description": "Roses, Asclepia, Hypericum Berry, Fern."
   },{
   "name": "Garden Roses",
   "price": "175",
-  "img": "http://ep.yimg.com/ca/I/yhst-12153424001014_2268_9157782"
+  "img": "http://ep.yimg.com/ca/I/yhst-12153424001014_2268_9157782",
+  "description": "Mix of our prettiest selection of standard roses and garden roses with local and seasonal greenery."
   }]
 }
