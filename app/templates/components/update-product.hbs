@@ -1,30 +1,30 @@
 {{#if showProductUpdateForm}}
-<h1>Update this product</h1>
+<h4>Update this product</h4>
 <div>
   <form>
     <div class="form-group">
       <label for="name">Name</label>
-      {{input value=name id="name"}}
+      {{input class="form-control" value=name id="name" placeholder=product.name}}
     </div>
 
     <div class="form-group">
       <label for="price">Price</label>
-      {{input value=price id="price"}}
+      {{input class="form-control" value=price id="price" placeholder=product.price}}
     </div>
 
     <div class="form-group">
       <label for="description">Description</label>
-      {{input value=description id="description"}}
+      {{input class="form-control" value=description id="description" placeholder=product.description}}
     </div>
 
     <div class="form-group">
       <label for="img">Image</label>
-      {{input value=img id="img"}}
+      {{input class="form-control" value=img id="img"}}
     </div>
 
-    <button class="btn btn-default" {{action 'updateProduct' product}}>Update</button>
+    <button class="btn btn-info" {{action 'updateProduct' product}}>Update</button>
   </form>
 </div>
 {{else}}
-  <button class="btn btn-default" {{action 'updateFormShow'}}>Update</button>
+  <button class="btn btn-info" {{action 'updateFormShow'}}>Update</button>
 {{/if}}

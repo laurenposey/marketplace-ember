@@ -1,3 +1,14 @@
 #shopping-cart-img {
   max-width: 100px;
 }
+
+#img-header {
+  max-width: 100%;
+}
+
+#title-text {
+  font-family: 'Amatica SC', cursive;
+  text-align: center;
+  font-size: 100px;
+  padding-bottom: 50px;
+}

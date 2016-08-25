@@ -4,27 +4,27 @@
   <form>
     <div class="form-group">
       <label for="name">Name</label>
-      {{input value=name id="name"}}
+      {{input class="form-control" value=name id="name"}}
     </div>
 
     <div class="form-group">
       <label for="price">Price</label>
-      {{input value=price id="price"}}
+      {{input class="form-control" value=price id="price"}}
     </div>
 
     <div class="form-group">
       <label for="description">Description</label>
-      {{input value=description id="description"}}
+      {{input class="form-control" value=description id="description"}}
     </div>
 
     <div class="form-group">
       <label for="img">Image</label>
-      {{input value=img id="img"}}
+      {{input class="form-control" value=img id="img"}}
     </div>
 
-    <button class="btn btn-default" {{action 'saveProduct'}}>Save</button>
+    <button class="btn btn-success" {{action 'saveProduct'}}>Save</button>
   </form>
 </div>
 {{else}}
-  <button class="btn btn-default" {{action 'productFormShow'}}>New Product</button>
+  <button class="btn btn-success" {{action 'productFormShow'}}>New Product</button>
 {{/if}}

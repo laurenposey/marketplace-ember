@@ -1,4 +1,4 @@
-  <div class="col-sm-6 col-md-6">
+  <div class="col-sm-4 col-md-4 col-md-4">
     <div class="thumbnail">
       {{#link-to 'product' product.id}}
       <img src={{product.img}} alt={{product.name}}>
@@ -7,7 +7,8 @@
         <p>{{product.name}}</p>
         <p>Price: ${{product.price}}</p>
         {{update-product product=product updateProduct="updateProduct"}}
-        <button class="btn btn-default" {{action 'delete' product}}>Delete</button>
+        <br>
+        <button class="btn btn-danger" {{action 'delete' product}}>Delete</button>
       </div>
     </div>
   </div>
