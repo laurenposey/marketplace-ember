@@ -1,6 +1,8 @@
-<h1>Admin Page</h1>
+<h1 class="header-text">Admin Page</h1>
+<hr>
 {{new-product saveProduct="saveProduct"}}
 <br>
+<h4>Current products</h4>
 {{#each model as |product|}}
   {{admin-product-tile product=product updateProduct="updateProduct" delete="delete"}}
 {{/each}}

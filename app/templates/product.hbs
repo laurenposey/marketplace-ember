@@ -1,7 +1,19 @@
-<img src={{model.img}} alt={{model.name}}>
+<div class="product-tile">
+  <img src={{model.img}} alt={{model.name}}>
 
-<p>{{model.name}}</p>
-<p>Price: ${{model.price}}</p>
-<p>
-  Description: {{model.description}}
-</p>
+  <h1 class="header-text">{{model.name}}</h1>
+
+  <p>Price: ${{model.price}}</p>
+  <p>
+    Description: {{model.description}}
+  </p>
+</div>
+
+{{new-review save="save" product=model}}
+
+<h1>Reviews</h1>
+<ul>
+  {{#each model.reviews as |review|}}
+  {{review-tile review=review}}
+  {{/each}}
+</ul>

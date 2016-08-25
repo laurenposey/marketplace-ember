@@ -12,3 +12,12 @@
   font-size: 100px;
   padding-bottom: 50px;
 }
+
+.header-text {
+  font-family: 'Amatica SC', cursive;
+  font-size: 80px;
+}
+
+.product-tile {
+  padding-top: 50px;
+}

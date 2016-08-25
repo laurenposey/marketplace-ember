@@ -4,5 +4,6 @@ export default DS.Model.extend({
   name:DS.attr(),
   price:DS.attr(),
   description:DS.attr(),
-  img:DS.attr()
+  img:DS.attr(),
+  reviews: DS.hasMany('review', { async: true})
 });
