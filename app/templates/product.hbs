@@ -11,7 +11,9 @@
 
 {{new-review save="save" product=model}}
 
-<h1>Reviews</h1>
+{{#if model.reviews}}
+<h1 class="subhead-text">Customer Reviews</h1>
+{{/if}}
 <ul>
   {{#each model.reviews as |review|}}
   {{review-tile review=review}}

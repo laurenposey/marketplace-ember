@@ -1,15 +1,15 @@
 {{#if addNewReview}}
-  <h1>Review this product!</h1>
+  <h1 class="subhead-text">What do you think of this product?</h1>
     <div>
       <form>
         <div class="form-group">
           <label for="content">Your review:</label>
-          {{input value=content id="content"}}
+          {{input class="form-control" value=content id="content"}}
         </div>
 
         <div class="form-group">
           <label for="author">Your name:</label>
-          {{input value=author id="author"}}
+          {{input class="form-control" value=author id="author"}}
         </div>
 
         <button class="btn btn-success" {{action 'save'}}>Save</button>
