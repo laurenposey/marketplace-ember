@@ -1,3 +1,5 @@
+
+
 <div class="product-tile">
   <img src={{model.img}} alt={{model.name}}>
 
@@ -14,8 +16,10 @@
 {{#if model.reviews}}
 <h1 class="subhead-text">Customer Reviews</h1>
 {{/if}}
-<ul>
-  {{#each model.reviews as |review|}}
-  {{review-tile review=review}}
-  {{/each}}
-</ul>
+
+{{#each model.reviews as |review|}}
+    <hr>
+    {{review-tile review=review}}
+    <h1>{{rating review}}</h1>
+    <hr>
+{{/each}}
